@@ -1,0 +1,6 @@
+hammer repository list --organization Red_Hat
+hammer host list
+hammer host facts --name=
+hammer content-view info --name cv_rhel7_base --organization Red_Hat
+hammer content-view info --name cv_puppet_modules --organization Red_Hat
+hammer puppet-class info --name ntp

@@ -1,0 +1,5 @@
+curl -X GET -s -k -u report:redhat https://satellite.redhat.lab/api/v2/hosts | python -mjson.tool
+curl -X GET -s -k -u report:redhat https://satellite.redhat.lab/api/v2/hosts/satellite.redhat.lab/facts | python -mjson.tool
+curl -X GET -s -k -u report:redhat https://satellite.redhat.lab/api/v2/hosts?search=apache | python -mjson.tool
+curl -X GET -s -k -u report:redhat https://satellite.redhat.lab/api/v2/hosts?search=lifecycle_environment=Dev | python -mjson.tool | grep -i 'certname\|errata_status_label'
+
